@@ -69,6 +69,9 @@ p {
   font-size: 14px;
 }
 
+/* ==========================================================================
+   Botões
+   ========================================================================== */
 button, .button {
   font-family: var(--font-body);
   font-size: 16px;
@@ -80,6 +83,10 @@ button, .button {
   padding: 12px 24px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 button:hover, .button:hover {
@@ -87,7 +94,115 @@ button:hover, .button:hover {
 }
 
 /* ==========================================================================
-   Desktop
+   Header & Navegação
+   ========================================================================== */
+.header {
+  background-color: var(--fundo-primario);
+  padding: 16px 20px;
+  position: relative;
+  z-index: 100;
+  border-bottom: 1px solid var(--fundo-secundario);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--fundo-secundario);
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  border-top: 1px solid var(--fundo-primario);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--texto);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: var(--destaque-primario);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-actions .button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--texto);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.menu-toggle:checked ~ .nav-menu {
+  display: flex;
+}
+
+.menu-toggle:checked ~ .header-actions .menu-icon .bar:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.menu-toggle:checked ~ .header-actions .menu-icon .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle:checked ~ .header-actions .menu-icon .bar:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
+/* ==========================================================================
+   Desktop (min-width: 1280px)
    ========================================================================== */
 @media (min-width: 1280px) {
   h1 {
@@ -112,5 +227,46 @@ button:hover, .button:hover {
 
   button, .button {
     font-size: 18px;
+  }
+
+  .header {
+    padding: 24px 40px;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .header-actions .button {
+    position: static;
+    transform: none;
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+    border-top: none;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .nav-list a {
+    font-size: 15px;
   }
 }
