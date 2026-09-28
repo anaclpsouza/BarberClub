@@ -1,1 +1,116 @@
-/* Base Styles */
+/* ==========================================================================
+   Variáveis Globais
+   ========================================================================== */
+:root {
+  /* Paleta de Cores */
+  --fundo-primario: #0F0F0F;
+  --fundo-secundario: #1A1A1A;
+  --destaque-primario: #E32636;
+  --texto: #FFFFFF;
+  --paragrafo: #CCCCCC;
+  --sucesso: #4CAF50;
+  --primario-hover: #57070E;
+
+  /* Tipografia */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* ==========================================================================
+   Reset & Configurações Globais
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--fundo-primario);
+  color: var(--texto);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ==========================================================================
+   Tipografia Base
+   ========================================================================== */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--texto);
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--paragrafo);
+}
+
+.p-sec {
+  font-size: 14px;
+}
+
+button, .button {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--destaque-primario);
+  color: var(--texto);
+  border: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: var(--primario-hover);
+}
+
+/* ==========================================================================
+   Desktop
+   ========================================================================== */
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .p-sec {
+    font-size: 15px;
+  }
+
+  button, .button {
+    font-size: 18px;
+  }
+}
