@@ -4,7 +4,7 @@
 .hero {
   background: radial-gradient(circle at center, var(--primario-hover) 0%, var(--fundo-primario) 70%);
   background-color: var(--fundo-primario);
-  padding: 40px 20px;
+  padding: 10px;
 }
 
 .hero-container {
@@ -179,6 +179,101 @@
 }
 
 /* ==========================================================================
+   Serviços Section
+   ========================================================================== */
+.servicos {
+  background-color: var(--fundo-primario);
+  padding: 40px 20px;
+}
+
+.servicos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 4px;
+  background-color: var(--destaque-primario);
+  margin-top: 8px;
+}
+
+.servicos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.servico-card {
+  background-color: var(--fundo-secundario);
+  border: 1px solid var(--destaque-primario);
+  padding: 24px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.servico-card:hover {
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.servico-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.servico-content h3 {
+  text-transform: uppercase;
+}
+
+.servico-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.servico-preco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servico-preco .investimento {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--paragrafo);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.servico-preco .valor {
+  font-family: var(--font-body);
+  font-size: 20px;
+  color: var(--destaque-primario);
+  font-weight: 700;
+}
+
+.servico-card .button {
+  width: 100%;
+}
+
+/* ==========================================================================
    Desktop (min-width: 1280px)
    ========================================================================== */
 @media (min-width: 1280px) {
@@ -246,5 +341,19 @@
 
   .sobre-stat-item .highlight-stat {
     font-size: 32px;
+  }
+
+  .servicos {
+    padding: 60px 80px;
+  }
+
+  .servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .section-title::after {
+    width: 30%;
   }
 }
