@@ -2,9 +2,9 @@
    Hero Section
    ========================================================================== */
 .hero {
-  background: radial-gradient(circle at center, rgba(227, 38, 54, 0.1) 0%, var(--fundo-primario) 70%);
+  background: radial-gradient(circle at center, var(--primario-hover) 0%, var(--fundo-primario) 70%);
   background-color: var(--fundo-primario);
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
 .hero-container {
@@ -84,12 +84,107 @@
 }
 
 /* ==========================================================================
+   Sobre Section
+   ========================================================================== */
+.sobre {
+  background-color: var(--fundo-primario);
+  padding: 40px 20px;
+}
+
+.sobre-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.sobre-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sobre-title {
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.sobre-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--fundo-secundario);
+}
+
+.sobre-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.sobre-stat-item .highlight-stat {
+  color: var(--destaque-primario);
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sobre-stat-item span {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--texto);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.sobre-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sobre-card {
+  background-color: var(--fundo-secundario);
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  border-radius: 4px;
+  align-items: flex-start;
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: var(--primario-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-text h3 {
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
    Desktop (min-width: 1280px)
    ========================================================================== */
 @media (min-width: 1280px) {
   .hero {
-    padding: 120px 40px;
-    background: radial-gradient(circle at 70% 50%, rgba(227, 38, 54, 0.15) 0%, var(--fundo-primario) 50%);
+    padding: 60px 80px;
+    background: radial-gradient(circle at 70% 50%, var(--primario-hover) 0%, var(--fundo-primario) 50%);
   }
 
   .hero-container {
@@ -127,5 +222,29 @@
 
   .hero-image img {
     height: 600px; 
+  }
+
+  .sobre {
+    padding: 60px 80px;
+  }
+
+  .sobre-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
+  }
+
+  .sobre-content {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .sobre-cards {
+    flex: 1;
+    gap: 24px;
+  }
+
+  .sobre-stat-item .highlight-stat {
+    font-size: 32px;
   }
 }
