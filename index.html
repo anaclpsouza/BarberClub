@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
@@ -26,7 +27,7 @@
           <li><a href="#">SERVIÇOS</a></li>
           <li><a href="#">BARBEIROS</a></li>
           <li><a href="#">GALERIA</a></li>
-          <li><a href="#">PLANOS VIP</a></li>
+          <li><a href="#planos">PLANOS VIP</a></li>
         </ul>
       </nav>
 
@@ -268,6 +269,67 @@
               <span class="overlay-text">Navalha Afiada</span>
             </figcaption>
           </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="planos" id="planos">
+      <div class="planos-container">
+        <div class="planos-header">
+          <h2 class="section-title section-title-center">PLANOS CLUB VIP</h2>
+          <p class="p-sec">Mantenha sua presença impecável durante todo o mês com economia, comodidade e privilégios incomparáveis.</p>
+        </div>
+
+        <div class="planos-grid">
+          <div class="plano-card">
+            <h3>AVULSO TRADICIONAL</h3>
+            <div class="plano-preco">
+              <span class="moeda">R$</span>
+              <span class="valor">0</span>
+            </div>
+            <ul class="plano-features">
+              <li><i class="fa-solid fa-check feature-check"></i> Agendamento online padronizado</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Café espresso cortesia</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Atendimento por ordem de reserva</li>
+              <li class="feature-disabled"><i class="fa-solid fa-xmark feature-cross"></i> Sem desconto em produtos</li>
+              <li class="feature-disabled"><i class="fa-solid fa-xmark feature-cross"></i> Sem acesso ao open bar premium</li>
+            </ul>
+            <a href="#agendar" class="button button-plano">AGENDAR HORÁRIO</a>
+          </div>
+
+          <div class="plano-card plano-silver">
+            <h3>MEMBRO VIP SILVER</h3>
+            <div class="plano-preco">
+              <span class="moeda">R$</span>
+              <span class="valor">149</span>
+              <span class="periodo">/ mês</span>
+            </div>
+            <ul class="plano-features">
+              <li><i class="fa-solid fa-check feature-check"></i> 3 Cortes de Cabelo por mês</li>
+              <li><i class="fa-solid fa-check feature-check"></i> 2 Barboterapias completas por mês</li>
+              <li><i class="fa-solid fa-check feature-check"></i> 10% de desconto em cosméticos da loja</li>
+              <li><i class="fa-solid fa-check feature-check"></i> 1 Chopp artesanal ou cerveja premium por visita</li>
+              <li class="feature-disabled"><i class="fa-solid fa-xmark feature-cross"></i> Sem área VIP de charutos</li>
+            </ul>
+            <a href="#assinar-silver" class="button button-plano">ASSINAR PLANO VIP SILVER</a>
+          </div>
+
+          <div class="plano-card plano-gold">
+            <h3>MEMBRO VIP GOLD</h3>
+            <div class="plano-preco">
+              <span class="moeda">R$</span>
+              <span class="valor">229</span>
+              <span class="periodo">/ mês</span>
+            </div>
+            <ul class="plano-features">
+              <li><i class="fa-solid fa-check feature-check"></i> <strong>Ilimitado:</strong> Cortes de Cabelo</li>
+              <li><i class="fa-solid fa-check feature-check"></i> <strong>Ilimitado:</strong> Barboterapia &amp; Barba</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Agendamento prioritário com 30 min de folga</li>
+              <li><i class="fa-solid fa-check feature-check"></i> 20% de desconto em toda a linha home care</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Acesso livre ao Lounge VIP e Whisky Bar exclusivo</li>
+            </ul>
+            <a href="#assinar-gold" class="button button-plano">ASSINAR PLANO VIP GOLD</a>
+          </div>
         </div>
       </div>
     </section>
