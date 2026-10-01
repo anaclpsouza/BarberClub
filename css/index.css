@@ -112,6 +112,7 @@
 
 .sobre-stats {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px;
   margin-top: 16px;
@@ -960,14 +961,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 
   .servicos-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .profissionais-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .planos-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
