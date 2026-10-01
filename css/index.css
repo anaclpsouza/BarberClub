@@ -778,7 +778,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
    Contato / Footer
    ========================================================================== */
 .contato {
-  background-color: #1a1a1a;
+  background-color: var(--fundo-secundario);
   padding: 60px 20px;
 }
 
@@ -849,6 +849,98 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .mapa-wrapper iframe {
   border: none;
   display: block;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+  background-color: var(--fundo-primario);
+  padding: 60px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-col h3 {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--texto);
+  margin-bottom: 8px;
+}
+
+.footer-info p {
+  font-size: 12px;
+  color: var(--paragrafo);
+  margin-bottom: 4px;
+}
+
+.footer-contact {
+  margin-top: 12px;
+}
+
+.footer-nav {
+  align-items: flex-start;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 8px;
+}
+
+.footer-nav a {
+  color: var(--texto);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: var(--destaque-primario);
+}
+
+.footer-redes {
+  align-items: flex-start;
+}
+
+.redes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rede-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--paragrafo);
+  color: var(--texto);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.rede-box:hover {
+  background-color: var(--destaque-primario);
+  border-color: var(--destaque-primario);
 }
 
 /* ==========================================================================
@@ -1028,5 +1120,42 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .mapa-wrapper iframe {
     height: 250px;
+  }
+
+  .site-footer {
+    padding: 80px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+  }
+
+  .footer-info {
+    flex: 1.5;
+  }
+
+  .footer-nav {
+    flex: 1;
+    align-items: center;
+  }
+  
+  .footer-nav h3 {
+    text-align: center;
+  }
+
+  .footer-redes {
+    flex: 1;
+    align-items: center;
+  }
+  
+  .footer-redes h3 {
+    text-align: center;
+  }
+
+  .redes-grid {
+    flex-direction: row;
+    justify-content: center;
   }
 }
