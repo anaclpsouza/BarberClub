@@ -564,6 +564,217 @@
 }
 
 /* ==========================================================================
+   Agendamento Section
+   ========================================================================== */
+.agendamento {
+  background-color: var(--fundo-primario);
+  padding: 40px 20px;
+}
+
+.agendamento-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.agendamento-form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.agendamento-coluna-esq {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1;
+}
+
+.form-section-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: var(--texto);
+}
+
+.servicos-radio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.servico-radio-card {
+  cursor: pointer;
+  display: block;
+}
+
+.servico-radio-card input[type="radio"] {
+  display: none;
+}
+
+.servico-radio-content {
+  background-color: var(--fundo-secundario);
+  border: 1px solid transparent;
+  padding: 16px;
+  border-radius: 4px;
+  display: flex;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Estilo do rádio selecionado usando :checked e o seletor irmão (+) */
+.servico-radio-card input[type="radio"]:checked + .servico-radio-content {
+  border-color: var(--destaque-primario);
+  background-color: var(--fundo-secundario);
+  box-shadow: inset 0 0 40px var(--primario-hover);
+}
+
+.radio-custom {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--paragrafo);
+  margin-top: 2px;
+  position: relative;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.servico-radio-card input[type="radio"]:checked + .servico-radio-content .radio-custom {
+  border-color: var(--destaque-primario);
+  background-color: var(--destaque-primario);
+}
+
+.servico-radio-card input[type="radio"]:checked + .servico-radio-content .radio-custom::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: var(--texto);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.servico-radio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.servico-radio-text h4 {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--texto);
+  margin: 0;
+}
+
+.servico-radio-text .valor {
+  color: var(--destaque-primario);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+.prof-data-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.input-group label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--texto);
+  text-transform: uppercase;
+}
+
+.input-group input, 
+.input-group select {
+  background-color: var(--fundo-secundario);
+  border: 1px solid #333;
+  color: var(--texto);
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  width: 100%;
+}
+
+.input-group input:focus, 
+.input-group select:focus {
+  outline: none;
+  border-color: var(--destaque-primario);
+}
+
+/* Invert cores dos ícones no input de data e hora (webkit browsers) */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+
+.dados-box {
+  background-color: var(--fundo-secundario);
+  padding: 32px 24px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dados-box .input-group input {
+  background-color: var(--fundo-primario);
+}
+
+.resumo-box {
+  border-left: 2px solid var(--destaque-primario);
+  padding-left: 16px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.resumo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resumo-header strong {
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--texto);
+}
+
+.resumo-header .resumo-valor {
+  color: var(--destaque-primario);
+  font-weight: 700;
+}
+
+.button-submit {
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* ==========================================================================
    Tablet (min-width: 768px)
    ========================================================================== */
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -697,5 +908,22 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
+  }
+
+  .agendamento {
+    padding: 60px 80px;
+  }
+
+  .agendamento-form {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .servicos-radio-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .agendamento-coluna-dir {
+    flex: 0 0 350px;
   }
 }

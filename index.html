@@ -333,6 +333,127 @@
         </div>
       </div>
     </section>
+
+    <section class="agendamento" id="agendar">
+      <div class="agendamento-container">
+        <h2 class="section-title">AGENDE SEU HORÁRIO</h2>
+        
+        <form class="agendamento-form" action="#" method="POST">
+          <div class="agendamento-coluna-esq">
+            
+            <div class="form-group-section">
+              <h3 class="form-section-title">SELECIONE O SERVIÇO</h3>
+              <div class="servicos-radio-grid">
+                
+                <label class="servico-radio-card">
+                  <input type="radio" name="servico" value="corte" checked>
+                  <div class="servico-radio-content">
+                    <div class="radio-custom"></div>
+                    <div class="servico-radio-text">
+                      <h4>Corte Tradicional</h4>
+                      <p class="p-sec">45 min • Finalização com pomada matte</p>
+                      <span class="valor">R$ 65,00</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="servico-radio-card">
+                  <input type="radio" name="servico" value="barba">
+                  <div class="servico-radio-content">
+                    <div class="radio-custom"></div>
+                    <div class="servico-radio-text">
+                      <h4>Barba Terapia Clássica</h4>
+                      <p class="p-sec">40 min • Óleos e toalha quente</p>
+                      <span class="valor">R$ 55,00</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="servico-radio-card">
+                  <input type="radio" name="servico" value="combo">
+                  <div class="servico-radio-content">
+                    <div class="radio-custom"></div>
+                    <div class="servico-radio-text">
+                      <h4>Combo Cabelo &amp; Barba</h4>
+                      <p class="p-sec">75 min • Inclui dose de bourbon</p>
+                      <span class="valor">R$ 105,00</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="servico-radio-card">
+                  <input type="radio" name="servico" value="camuflagem">
+                  <div class="servico-radio-content">
+                    <div class="radio-custom"></div>
+                    <div class="servico-radio-text">
+                      <h4>Camuflagem Grisalhos</h4>
+                      <p class="p-sec">30 min • Discreto e natural</p>
+                      <span class="valor">R$ 65,00</span>
+                    </div>
+                  </div>
+                </label>
+
+              </div>
+            </div>
+
+            <div class="form-group-section">
+              <h3 class="form-section-title">PROFISSIONAL, DATA E HORÁRIO</h3>
+              <div class="prof-data-grid">
+                <div class="input-group full-width">
+                  <label for="profissional">MESTRE BARBEIRO</label>
+                  <select id="profissional" name="profissional">
+                    <option value="qualquer">Qualquer barbeiro disponível</option>
+                    <option value="carlos">Carlos "Navalha" Silva</option>
+                    <option value="marcos">Marcos Toledo</option>
+                    <option value="andre">André Santos</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="data">DATA DESEJADA</label>
+                  <input type="date" id="data" name="data" value="2026-09-25">
+                </div>
+                <div class="input-group">
+                  <label for="horario">HORÁRIO</label>
+                  <input type="time" id="horario" name="horario" value="14:00">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="agendamento-coluna-dir">
+            <div class="dados-box">
+              <h3 class="form-section-title">SEUS DADOS</h3>
+              
+              <div class="input-group">
+                <label for="nome">NOME COMPLETO</label>
+                <input type="text" id="nome" name="nome">
+              </div>
+
+              <div class="input-group">
+                <label for="telefone">WHATSAPP / TELEFONE</label>
+                <input type="tel" id="telefone" name="telefone">
+              </div>
+
+              <div class="input-group">
+                <label for="email">E-MAIL</label>
+                <input type="email" id="email" name="email">
+              </div>
+
+              <div class="resumo-box">
+                <div class="resumo-header">
+                  <strong>Corte Tradicional</strong>
+                  <span class="resumo-valor">R$ 65,00</span>
+                </div>
+                <p class="p-sec">Tempo estimado: 75 min •<br>Pontualidade rigorosa</p>
+              </div>
+
+              <button type="submit" class="button button-submit">CONFIRMAR AGENDAMENTO</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 </body>
 </html>
