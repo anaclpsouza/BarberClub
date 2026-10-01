@@ -112,6 +112,7 @@
 
 .sobre-stats {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px;
   margin-top: 16px;
@@ -922,7 +923,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .redes-grid {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 12px;
 }
 
@@ -947,6 +948,33 @@ input[type="time"]::-webkit-calendar-picker-indicator {
    Tablet (min-width: 768px)
    ========================================================================== */
 @media (min-width: 768px) and (max-width: 1279px) {
+  .hero {
+    padding: 50px 40px;
+  }
+
+  .sobre, .servicos, .profissionais, .galeria, .planos, .agendamento {
+    padding: 50px 40px;
+  }
+
+  .contato, .site-footer {
+    padding: 60px 40px;
+  }
+
+  .servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profissionais-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .planos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .galeria-item img {
     height: 250px;
   }
