@@ -775,6 +775,83 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 /* ==========================================================================
+   Contato / Footer
+   ========================================================================== */
+.contato {
+  background-color: #1a1a1a;
+  padding: 60px 20px;
+}
+
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.contato-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contato-title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--destaque-primario);
+}
+
+.contato-detalhes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.contato-subtitle {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--texto);
+  margin-bottom: 24px;
+}
+
+.funcionamento-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.funcionamento-lista li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  color: var(--paragrafo);
+  font-size: 14px;
+}
+
+.contato-mapa {
+  display: flex;
+  flex-direction: column;
+}
+
+.mapa-wrapper {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.mapa-wrapper iframe {
+  border: none;
+  display: block;
+}
+
+/* ==========================================================================
    Tablet (min-width: 768px)
    ========================================================================== */
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -925,5 +1002,31 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .agendamento-coluna-dir {
     flex: 0 0 350px;
+  }
+
+  .contato {
+    padding: 80px;
+  }
+
+  .contato-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+  }
+
+  .contato-info {
+    flex: 1.2;
+  }
+
+  .contato-funcionamento {
+    flex: 1;
+  }
+
+  .contato-mapa {
+    flex: 1.8;
+  }
+
+  .mapa-wrapper iframe {
+    height: 250px;
   }
 }
