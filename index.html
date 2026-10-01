@@ -7,10 +7,539 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="header-container">
+      <a href="#inicio" class="logo">
+        <img src="img/logo.png" alt="Barber Club">
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#inicio">INÍCIO</a></li>
+          <li><a href="#sobre">SOBRE</a></li>
+          <li><a href="#servicos">SERVIÇOS</a></li>
+          <li><a href="#barbeiros">BARBEIROS</a></li>
+          <li><a href="#galeria">GALERIA</a></li>
+          <li><a href="#planos">PLANOS VIP</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#agendar" class="button">AGENDAR HORÁRIO</a>
+        <label for="menu-toggle" class="menu-icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">ESTILO, TRADIÇÃO & <br><span class="highlight">NAVALHA AFIADA</span></h1>
+          <p class="hero-text">O clássico cavalheiro reencontra o respeito pelo visual impecável. Tradição secular em cortes de precisão, barboterapia sensorial com toalhas quentes e atendimento com uísques artesanais selecionados.</p>
+          
+          <div class="hero-buttons">
+            <a href="#agendar" class="button button-primary">AGENDAR</a>
+            <a href="#servicos" class="button button-secondary">SERVIÇOS</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong>4.9 / 5.0</strong>
+              <span class="p-sec">1.2k+ avaliações</span>
+            </div>
+            <div class="stat-item">
+              <strong>10+ Anos</strong>
+              <span class="p-sec">Tradição e Maestria</span>
+            </div>
+            <div class="stat-item">
+              <strong>Toalha Quente</strong>
+              <span class="p-sec">Navalha Clássica</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="img/hero.png" alt="Barbeiro realizando corte de cabelo">
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <div class="sobre-container">
+        <div class="sobre-content">
+          <h2 class="sobre-title">MAIS QUE UM CORTE, UM RITUAL DE IDENTIDADE MASCULINA</h2>
+          <p class="sobre-text">Fundada sob a premissa inegociável de que o cuidado pessoal é uma arte que demanda tempo e veneração, o Barber Club resgata a atmosfera das lendárias barbearias nova-iorquinas do início do século XX.</p>
+          
+          <div class="sobre-stats">
+            <div class="sobre-stat-item">
+              <strong class="highlight-stat">100%</strong>
+              <span>NAVALHA DESCARTÁVEL</span>
+            </div>
+            <div class="sobre-stat-item">
+              <strong class="highlight-stat">14</strong>
+              <span>RÓTULOS DE BOURBON</span>
+            </div>
+            <div class="sobre-stat-item">
+              <strong class="highlight-stat">38.4K</strong>
+              <span>CORTES EXECUTADOS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre-cards">
+          <div class="sobre-card">
+            <div class="card-icon">
+              <img src="img/icon/navalha-icon.svg" alt="">
+            </div>
+            <div class="card-text">
+              <h3>MESTRES BARBEIROS</h3>
+              <p class="p-sec">Profissionais com formação clássica europeia, certificados nas técnicas mais exigentes de navalhete e tesoura livre.</p>
+            </div>
+          </div>
+          
+          <div class="sobre-card">
+            <div class="card-icon">
+              <img src="img/icon/navalha-icon.svg" alt="">
+            </div>
+            <div class="card-text">
+              <h3>AMBIENTE CLÁSSICO & LOUNGE</h3>
+              <p class="p-sec">Piso de taco nobre, som ambiente analógico em vinil, charutaria climatizada e café espresso extraído na hora.</p>
+            </div>
+          </div>
+
+          <div class="sobre-card">
+            <div class="card-icon">
+              <img src="img/icon/navalha-icon.svg" alt="">
+            </div>
+            <div class="card-text">
+              <h3>PRODUTOS PREMIUM IMPORTADOS</h3>
+              <p class="p-sec">Pomadas à base de água, bálsamos com extratos naturais, óleos essenciais orgânicos sem parabenos para a saúde da pele.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="servicos" id="servicos">
+      <div class="servicos-container">
+        <h2 class="section-title">NOSSOS SERVIÇOS</h2>
+        
+        <div class="servicos-grid">
+          <div class="servico-card">
+            <div class="servico-content">
+              <h3>CORTE TRADICIONAL</h3>
+              <p class="p-sec">Tesoura, máquina de acabamento cirúrgica, lavagem especial refrescante e finalização com pomada matte importada.</p>
+            </div>
+            <div class="servico-footer">
+              <div class="servico-preco">
+                <span class="investimento">INVESTIMENTO</span>
+                <span class="valor">R$ 65,00</span>
+              </div>
+              <a href="#agendar" class="button">AGENDAR</a>
+            </div>
+          </div>
+
+          <div class="servico-card">
+            <div class="servico-content">
+              <h3>BARBA TERAPIA CLÁSSICA</h3>
+              <p class="p-sec">Toalha quente aromatizada, óleos essenciais orgânicos, massagem facial relaxante e navalha afiada descartável.</p>
+            </div>
+            <div class="servico-footer">
+              <div class="servico-preco">
+                <span class="investimento">INVESTIMENTO</span>
+                <span class="valor">R$ 55,00</span>
+              </div>
+              <a href="#agendar" class="button">AGENDAR</a>
+            </div>
+          </div>
+
+          <div class="servico-card">
+            <div class="servico-content">
+              <h3>COMBO CABELO & BARBA</h3>
+              <p class="p-sec">A experiência completa para o homem moderno que valoriza seu estilo: corte estruturado, barboterapia total e dose de bourbon.</p>
+            </div>
+            <div class="servico-footer">
+              <div class="servico-preco">
+                <span class="investimento">INVESTIMENTO</span>
+                <span class="valor">R$ 65,00</span>
+              </div>
+              <a href="#agendar" class="button">AGENDAR</a>
+            </div>
+          </div>
+
+          <div class="servico-card">
+            <div class="servico-content">
+              <h3>CAMUFLAGEM GRISALHOS</h3>
+              <p class="p-sec">Alinhamento natural e discreto de fios brancos na barba ou cabelo com produtos hipoalergênicos de longa durabilidade.</p>
+            </div>
+            <div class="servico-footer">
+              <div class="servico-preco">
+                <span class="investimento">INVESTIMENTO</span>
+                <span class="valor">R$ 65,00</span>
+              </div>
+              <a href="#agendar" class="button">AGENDAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="profissionais" id="barbeiros">
+      <div class="profissionais-container">
+        <div class="profissionais-header">
+          <h2 class="section-title">MESTRES DA NAVALHA</h2>
+          <p class="p-sec">Nossa equipe reúne profissionais com mais de uma década de prática diária no corte geométrico e cuidado da barba.</p>
+        </div>
+        
+        <div class="profissionais-grid">
+          <div class="profissional-card">
+            <img src="img/img%20profissional.png" alt="Carlos Silva, barbeiro">
+            <div class="profissional-content">
+              <h3>CARLOS "NAVALHA" SILVA</h3>
+              <p class="p-sec">Especialista em Degradê milimétrico (Skin Fade), Razor Fade tradicional e Barboterapia com toalha aromática. 12 anos no ofício.</p>
+              <a href="#agendar" class="button">AGENDAR COM CARLOS</a>
+            </div>
+          </div>
+
+          <div class="profissional-card">
+            <img src="img/img%20profissional-1.png" alt="Marcos Toledo, barbeiro">
+            <div class="profissional-content">
+              <h3>MARCOS TOLEDO</h3>
+              <p class="p-sec">Mestre em Cortes Clássicos (Executive Contour, Pompadour e Slick Back). Especializado em penteados anos 40 e 50 com finalização a seco.</p>
+              <a href="#agendar" class="button">AGENDAR COM MARCOS</a>
+            </div>
+          </div>
+
+          <div class="profissional-card">
+            <img src="img/img%20profissional-2.png" alt="André Santos, barbeiro">
+            <div class="profissional-content">
+              <h3>ANDRÉ SANTOS</h3>
+              <p class="p-sec">Especialista em Visagismo Facial, estruturação de Barba Longa e alinhamento anatômico do queixo com tratamento térmico intensivo.</p>
+              <a href="#agendar" class="button">AGENDAR COM ANDRÉ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria" id="galeria">
+      <div class="galeria-container">
+        <h2 class="section-title">GALERIA DE CORTES & AMBIENTE</h2>
+        
+        <div class="galeria-grid">
+          <figure class="galeria-item item-grande">
+            <img src="img/img-galeria-1.png" alt="Barbeiro realizando corte de cabelo">
+            <figcaption class="galeria-overlay">
+              <span class="overlay-text">Técnica e Precisão</span>
+            </figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="img/img-galeria-2.png" alt="Equipamentos de barbearia">
+            <figcaption class="galeria-overlay">
+              <span class="overlay-text">Ferramentas Tradicionais</span>
+            </figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="img/img-galeria-3.png" alt="Corte finalizado">
+            <figcaption class="galeria-overlay">
+              <span class="overlay-text">Acabamento Impecável</span>
+            </figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="img/img-galeria-4.png" alt="Ambiente da barbearia">
+            <figcaption class="galeria-overlay">
+              <span class="overlay-text">Ambiente Clássico</span>
+            </figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <img src="img/img-galeria-5.png" alt="Detalhe navalha">
+            <figcaption class="galeria-overlay">
+              <span class="overlay-text">Navalha Afiada</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="planos" id="planos">
+      <div class="planos-container">
+        <div class="planos-header">
+          <h2 class="section-title section-title-center">PLANOS CLUB VIP</h2>
+          <p class="p-sec">Mantenha sua presença impecável durante todo o mês com economia, comodidade e privilégios incomparáveis.</p>
+        </div>
+
+        <div class="planos-grid">
+          <div class="plano-card">
+            <h3>AVULSO TRADICIONAL</h3>
+            <div class="plano-preco">
+              <span class="moeda">R$</span>
+              <span class="valor">0</span>
+            </div>
+            <ul class="plano-features">
+              <li><i class="fa-solid fa-check feature-check"></i> Agendamento online padronizado</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Café espresso cortesia</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Atendimento por ordem de reserva</li>
+              <li class="feature-disabled"><i class="fa-solid fa-xmark feature-cross"></i> Sem desconto em produtos</li>
+              <li class="feature-disabled"><i class="fa-solid fa-xmark feature-cross"></i> Sem acesso ao open bar premium</li>
+            </ul>
+            <a href="#agendar" class="button button-plano">AGENDAR HORÁRIO</a>
+          </div>
+
+          <div class="plano-card plano-silver">
+            <h3>MEMBRO VIP SILVER</h3>
+            <div class="plano-preco">
+              <span class="moeda">R$</span>
+              <span class="valor">149</span>
+              <span class="periodo">/ mês</span>
+            </div>
+            <ul class="plano-features">
+              <li><i class="fa-solid fa-check feature-check"></i> 3 Cortes de Cabelo por mês</li>
+              <li><i class="fa-solid fa-check feature-check"></i> 2 Barboterapias completas por mês</li>
+              <li><i class="fa-solid fa-check feature-check"></i> 10% de desconto em cosméticos da loja</li>
+              <li><i class="fa-solid fa-check feature-check"></i> 1 Chopp artesanal ou cerveja premium por visita</li>
+              <li class="feature-disabled"><i class="fa-solid fa-xmark feature-cross"></i> Sem área VIP de charutos</li>
+            </ul>
+            <a href="#agendar" class="button button-plano">ASSINAR PLANO VIP SILVER</a>
+          </div>
+
+          <div class="plano-card plano-gold">
+            <h3>MEMBRO VIP GOLD</h3>
+            <div class="plano-preco">
+              <span class="moeda">R$</span>
+              <span class="valor">229</span>
+              <span class="periodo">/ mês</span>
+            </div>
+            <ul class="plano-features">
+              <li><i class="fa-solid fa-check feature-check"></i> <strong>Ilimitado:</strong> Cortes de Cabelo</li>
+              <li><i class="fa-solid fa-check feature-check"></i> <strong>Ilimitado:</strong> Barboterapia &amp; Barba</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Agendamento prioritário com 30 min de folga</li>
+              <li><i class="fa-solid fa-check feature-check"></i> 20% de desconto em toda a linha home care</li>
+              <li><i class="fa-solid fa-check feature-check"></i> Acesso livre ao Lounge VIP e Whisky Bar exclusivo</li>
+            </ul>
+            <a href="#agendar" class="button button-plano">ASSINAR PLANO VIP GOLD</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="agendamento" id="agendar">
+      <div class="agendamento-container">
+        <h2 class="section-title">AGENDE SEU HORÁRIO</h2>
+        
+        <form class="agendamento-form" action="#" method="POST">
+          <div class="agendamento-coluna-esq">
+            
+            <div class="form-group-section">
+              <h3 class="form-section-title">SELECIONE O SERVIÇO</h3>
+              <div class="servicos-radio-grid">
+                
+                <label class="servico-radio-card">
+                  <input type="radio" name="servico" value="corte" checked>
+                  <div class="servico-radio-content">
+                    <div class="radio-custom"></div>
+                    <div class="servico-radio-text">
+                      <h4>Corte Tradicional</h4>
+                      <p class="p-sec">45 min • Finalização com pomada matte</p>
+                      <span class="valor">R$ 65,00</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="servico-radio-card">
+                  <input type="radio" name="servico" value="barba">
+                  <div class="servico-radio-content">
+                    <div class="radio-custom"></div>
+                    <div class="servico-radio-text">
+                      <h4>Barba Terapia Clássica</h4>
+                      <p class="p-sec">40 min • Óleos e toalha quente</p>
+                      <span class="valor">R$ 55,00</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="servico-radio-card">
+                  <input type="radio" name="servico" value="combo">
+                  <div class="servico-radio-content">
+                    <div class="radio-custom"></div>
+                    <div class="servico-radio-text">
+                      <h4>Combo Cabelo &amp; Barba</h4>
+                      <p class="p-sec">75 min • Inclui dose de bourbon</p>
+                      <span class="valor">R$ 105,00</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="servico-radio-card">
+                  <input type="radio" name="servico" value="camuflagem">
+                  <div class="servico-radio-content">
+                    <div class="radio-custom"></div>
+                    <div class="servico-radio-text">
+                      <h4>Camuflagem Grisalhos</h4>
+                      <p class="p-sec">30 min • Discreto e natural</p>
+                      <span class="valor">R$ 65,00</span>
+                    </div>
+                  </div>
+                </label>
+
+              </div>
+            </div>
+
+            <div class="form-group-section">
+              <h3 class="form-section-title">PROFISSIONAL, DATA E HORÁRIO</h3>
+              <div class="prof-data-grid">
+                <div class="input-group full-width">
+                  <label for="profissional">MESTRE BARBEIRO</label>
+                  <select id="profissional" name="profissional">
+                    <option value="qualquer">Qualquer barbeiro disponível</option>
+                    <option value="carlos">Carlos "Navalha" Silva</option>
+                    <option value="marcos">Marcos Toledo</option>
+                    <option value="andre">André Santos</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="data">DATA DESEJADA</label>
+                  <input type="date" id="data" name="data" value="2026-09-25">
+                </div>
+                <div class="input-group">
+                  <label for="horario">HORÁRIO</label>
+                  <input type="time" id="horario" name="horario" value="14:00">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="agendamento-coluna-dir">
+            <div class="dados-box">
+              <h3 class="form-section-title">SEUS DADOS</h3>
+              
+              <div class="input-group">
+                <label for="nome">NOME COMPLETO</label>
+                <input type="text" id="nome" name="nome">
+              </div>
+
+              <div class="input-group">
+                <label for="telefone">WHATSAPP / TELEFONE</label>
+                <input type="tel" id="telefone" name="telefone">
+              </div>
+
+              <div class="input-group">
+                <label for="email">E-MAIL</label>
+                <input type="email" id="email" name="email">
+              </div>
+
+              <div class="resumo-box">
+                <div class="resumo-header">
+                  <strong>Corte Tradicional</strong>
+                  <span class="resumo-valor">R$ 65,00</span>
+                </div>
+                <p class="p-sec">Tempo estimado: 75 min •<br>Pontualidade rigorosa</p>
+              </div>
+
+              <button type="submit" class="button button-submit">CONFIRMAR AGENDAMENTO</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+    <div class="contato-container">
+      
+      <div class="contato-info">
+        <h2 class="contato-title">BARBER CLUB</h2>
+        <p class="p-sec">Localização nobre no coração dos Jardins.<br>Estacionamento conveniado no número 1450<br>com manobrista gratuito para clientes.</p>
+        <div class="contato-detalhes">
+          <p class="p-sec">Rua Augusta, 1420 — Jardins, São Paulo - SP,<br>01412-000</p>
+          <p class="p-sec">+55 (11) 3456-7890 / (11) 99876-5432</p>
+          <p class="p-sec">contato@barberclubsp.com.br</p>
+        </div>
+      </div>
+
+      <div class="contato-funcionamento">
+        <h3 class="contato-subtitle">FUNCIONAMENTO</h3>
+        <ul class="funcionamento-lista">
+          <li>
+            <span>Segunda a Sexta</span>
+            <span>09h00 às 21h00</span>
+          </li>
+          <li>
+            <span>Sábados</span>
+            <span>08h00 às 20h00</span>
+          </li>
+          <li>
+            <span>Domingos e<br>Feriados</span>
+            <span>Fechado</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contato-mapa">
+        <h3 class="contato-subtitle">COMO CHEGAR</h3>
+        <div class="mapa-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1476686367576!2d-46.66205842531089!3d-23.563148161652433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8cc6ba775%3A0xc6ba6a71ceaaedc7!2sR.%20Augusta%2C%201420%20-%20Consola%C3%A7%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001304-001!5e0!3m2!1spt-BR!2sbr!4v1714421160351!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="180" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <div class="footer-col footer-info">
+        <h3>BARBER CLUB</h3>
+        <p class="p-sec">A Barber Club é o seu refúgio de estilo e tradição. Oferecemos uma experiência premium de barbearia clássica, unindo técnica impecável, conforto e um ambiente exclusivo para o homem moderno.</p>
+        <div class="footer-contact">
+          <p class="p-sec">Rua Augusta, 1420 — Jardins, São Paulo - SP, 01412-000</p>
+          <p class="p-sec">+55 (11) 3456-7890 / (11) 99876-5432</p>
+          <p class="p-sec">contato@barberclubsp.com.br</p>
+        </div>
+      </div>
+
+      <nav class="footer-col footer-nav">
+        <h3>NAVEGAÇÃO RÁPIDA</h3>
+        <ul>
+          <li><a href="#agendar">AGENDAMENTO</a></li>
+          <li><a href="#planos">PLANOS</a></li>
+          <li><a href="#galeria">GALERIA</a></li>
+          <li><a href="#barbeiros">PROFISSIONAIS</a></li>
+          <li><a href="#servicos">SERVIÇOS</a></li>
+          <li><a href="#sobre">SOBRE NÓS</a></li>
+          <li><a href="#inicio">TOPO</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col footer-redes">
+        <h3>NOSSAS REDES</h3>
+        <div class="redes-grid">
+          <a href="#" class="rede-box" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="rede-box" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="rede-box" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
 </body>
 </html>
